@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 - Course Home Page</title>
+  <meta name="description" content="WDD 231 Course Home Page showcasing dynamic course filtering, responsive layout, and web performance standards.">
+  <meta name="author" content="Andre Guerrero">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="profile-container">
+      <img src="images/profile.webp" alt="Andre Guerrero Profile Picture" width="75" height="75" loading="lazy">
+      <span>Andre Guerrero</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>WDD 231: Web Frontend Development I</h1>
+
+    <section class="card">
+      <h2>Course Certificate Work</h2>
+
+      <div class="filter-buttons">
+        <button id="all-btn">All</button>
+        <button id="cse-btn">CSE</button>
+        <button id="wdd-btn">WDD</button>
+      </div>
+
+      <div id="course-container" class="courses-grid"></div>
+
+      <p id="total-credits" class="credits-info"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Andre Guerrero | Ecuador</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
