@@ -6,7 +6,7 @@
   --completed-bg: #d4edda;
   --completed-border: #28a745;
   --completed-text: #155724;
-  --font-family: Arial, sans-serif;
+  --font-family: 'Roboto', sans-serif; 
 }
 
 * {

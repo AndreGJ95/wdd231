@@ -6,7 +6,14 @@
   <title>WDD 231 - Course Home Page</title>
   <meta name="description" content="WDD 231 Course Home Page showcasing dynamic course filtering, responsive layout, and web performance standards.">
   <meta name="author" content="Andre Guerrero">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  
   <script src="scripts/main.js" defer></script>
 </head>
 <body>
@@ -31,16 +38,23 @@
 
     <section class="card">
       <h2>Course Certificate Work</h2>
-
       <div class="filter-buttons">
         <button id="all-btn">All</button>
         <button id="cse-btn">CSE</button>
         <button id="wdd-btn">WDD</button>
       </div>
-
       <div id="course-container" class="courses-grid"></div>
-
       <p id="total-credits" class="credits-info"></p>
+    </section>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>Welcome to my course home page. I am studying Web Frontend Development at BYU-Idaho.</p>
+    </section>
+
+    <section class="card">
+      <h2>Location</h2>
+      <p>Guayaquil, Ecuador</p>
     </section>
   </main>
 
