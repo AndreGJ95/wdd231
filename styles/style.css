@@ -102,7 +102,7 @@ h1 {
   background-color: var(--secondary-color);
 }
 
-/* Rejilla adaptable para el listado de cursos */
+
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
