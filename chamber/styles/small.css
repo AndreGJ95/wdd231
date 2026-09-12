@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: var(--dark-text);
   margin: 0;
   padding: 0;
@@ -67,8 +67,11 @@ nav a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Solución del error de contraste WCAG AA */
 nav a.active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--secondary-color);
+  color: #000000;
+  font-weight: bold;
   border-radius: 4px;
 }
 
@@ -106,7 +109,6 @@ h1 {
   color: #ffffff;
 }
 
-/* Grid View Layout */
 #members-container.grid-view {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -134,7 +136,6 @@ h1 {
   object-fit: contain;
 }
 
-/* List View Layout - Ocorta imágenes para la rúbrica */
 #members-container.list-view {
   display: flex;
   flex-direction: column;
