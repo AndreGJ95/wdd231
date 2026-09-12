@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Guayaquil Tech Solutions",
+    "address": "Av. 9 de Octubre 100, Guayaquil, Ecuador",
+    "phone": "+593 4 212 3456",
+    "website": "https://example.com/tech",
+    "image": "images/tech-solutions.webp",
+    "membership": 3,
+    "category": "Servicios Tecnológicos"
+  },
+  {
+    "name": "Estudio de Diseño Costa del Pacífico",
+    "address": "Malecón 2000, Guayaquil, Ecuador",
+    "phone": "+593 4 223 4567",
+    "website": "https://example.com/design",
+    "image": "images/design-studio.webp",
+    "membership": 2,
+    "category": "Arquitectura y Diseño"
+  },
+  {
+    "name": "Ecuador Ecotours",
+    "address": "Puerto Santa Ana, Guayaquil, Ecuador",
+    "phone": "+593 4 234 5678",
+    "website": "https://example.com/tours",
+    "image": "images/ecotours.webp",
+    "membership": 1,
+    "category": "Turismo y Hospitalidad"
+  },
+  {
+    "name": "Café Cosecha Andina",
+    "address": "Urdesa Central, Guayaquil, Ecuador",
+    "phone": "+593 4 245 6789",
+    "website": "https://example.com/coffee",
+    "image": "images/coffee.webp",
+    "membership": 3,
+    "category": "Alimentos y Bebidas"
+  },
+  {
+    "name": "Corporación Logística Guayas",
+    "address": "Vía a Daule Km 5, Guayaquil, Ecuador",
+    "phone": "+593 4 256 7890",
+    "website": "https://example.com/logistics",
+    "image": "images/logistics.webp",
+    "membership": 2,
+    "category": "Transporte y Carga"
+  },
+  {
+    "name": "Obras Civiles Metropolitanas",
+    "address": "Kennedy Norte, Guayaquil, Ecuador",
+    "phone": "+593 4 267 8901",
+    "website": "https://example.com/civil",
+    "image": "images/civil.webp",
+    "membership": 1,
+    "category": "Construcción"
+  },
+  {
+    "name": "Energía Renovable Solaris",
+    "address": "Samborondón Km 2.5, Guayaquil, Ecuador",
+    "phone": "+593 4 278 9012",
+    "website": "https://example.com/energy",
+    "image": "images/energy.webp",
+    "membership": 3,
+    "category": "Energía Limpia"
+  }
+]
