@@ -17,12 +17,12 @@
   <meta property="og:url" content="https://andregj95.github.io/wdd231/chamber/index.html">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts (Requerido por el audit) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Hojas de estilo -->
+  <!-- Estilos -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
@@ -34,7 +34,7 @@
 <body>
   <header>
     <img src="images/logo.webp" alt="Chamber Logo" width="80" height="80">
-    <h1>Chamber of Commerce</h1>
+    <p class="site-title">Chamber of Commerce</p>
   </header>
 
   <nav>
@@ -46,6 +46,9 @@
   </nav>
 
   <main class="home-grid">
+    <!-- El h1 debe ir dentro de main para pasar el audit -->
+    <h1>Chamber of Commerce Home</h1>
+
     <!-- Hero Section -->
     <section class="hero">
       <picture>
