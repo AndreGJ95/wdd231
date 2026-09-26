@@ -3,12 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Join Us</title>
-    <meta name="description" content="Chamber of Commerce Membership Application Form">
+    <title>Join - Chamber of Commerce Membership</title>
+    
+    <!-- Meta Description (Ajustado entre 50 y 160 caracteres) -->
+    <meta name="description" content="Apply for a Chamber of Commerce membership today to grow your business, access exclusive networking events, and gain community visibility.">
+    
+    <!-- Meta Author -->
+    <meta name="author" content="Andre Guerrero Jacome">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Join the Chamber of Commerce - Apply Today">
+    <meta property="og:description" content="Apply for a Chamber of Commerce membership to access networking events, training workshops, and prominent business exposure.">
+    <meta property="og:image" content="https://AndreGJ95.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://AndreGJ95.github.io/wdd231/chamber/join.html">
+
+    <!-- Google Fonts & Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Scripts -->
     <script src="scripts/join.js" defer></script>
 </head>
 <body>
@@ -30,64 +53,64 @@
         <h1>Membership Application</h1>
         
         <div class="join-grid">
-            <!-- Formulario de Aplicación -->
+            <!-- Formulario con atributos title directamente en las etiquetas input/textarea -->
             <form method="get" action="thankyou.html" class="membership-form">
                 
-                <label title="First Name">
+                <label>
                     First Name *
-                    <input type="text" name="fname" required autocomplete="given-name">
+                    <input type="text" name="fname" required autocomplete="given-name" title="Please enter your first name.">
                 </label>
 
-                <label title="Last Name">
+                <label>
                     Last Name *
-                    <input type="text" name="lname" required autocomplete="family-name">
+                    <input type="text" name="lname" required autocomplete="family-name" title="Please enter your last name.">
                 </label>
 
-                <label title="Organizational Title">
+                <label>
                     Organizational Title
                     <input type="text" name="orgtitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters. Alpha characters, hyphens, and spaces only.">
                 </label>
 
-                <label title="Email Address">
+                <label>
                     Email *
-                    <input type="email" name="email" required autocomplete="email" placeholder="john.doe@example.com">
+                    <input type="email" name="email" required autocomplete="email" placeholder="john.doe@example.com" title="Please enter a valid email address.">
                 </label>
 
-                <label title="Mobile Phone">
+                <label>
                     Mobile Phone *
-                    <input type="tel" name="phone" required autocomplete="tel">
+                    <input type="tel" name="phone" required autocomplete="tel" title="Please enter your mobile phone number.">
                 </label>
 
-                <label title="Business or Organization Name">
+                <label>
                     Business/Organization Name *
-                    <input type="text" name="organization" required autocomplete="organization">
+                    <input type="text" name="organization" required autocomplete="organization" title="Please enter your business or organization name.">
                 </label>
 
                 <fieldset>
                     <legend>Membership Level *</legend>
                     <label class="radio-label">
-                        <input type="radio" name="membership" value="np" required> NP Membership (Non-Profit - Free)
+                        <input type="radio" name="membership" value="np" required title="Select Non-Profit Membership"> NP Membership (Non-Profit - Free)
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="membership" value="bronze"> Bronze Membership
+                        <input type="radio" name="membership" value="bronze" title="Select Bronze Membership"> Bronze Membership
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="membership" value="silver"> Silver Membership
+                        <input type="radio" name="membership" value="silver" title="Select Silver Membership"> Silver Membership
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="membership" value="gold"> Gold Membership
+                        <input type="radio" name="membership" value="gold" title="Select Gold Membership"> Gold Membership
                     </label>
                 </fieldset>
 
-                <label title="Business Description">
+                <label>
                     Business/Organization Description
-                    <textarea name="description" rows="4"></textarea>
+                    <textarea name="description" rows="4" title="Please enter a brief description of your business or organization."></textarea>
                 </label>
 
                 <!-- Campo oculto para Timestamp -->
                 <input type="hidden" name="timestamp" id="timestamp">
 
-                <input type="submit" value="Submit Application" class="submit-btn">
+                <button type="submit" class="submit-btn" title="Submit your membership application">Submit Application</button>
             </form>
 
             <!-- Tarjetas de Membresía -->
@@ -153,7 +176,7 @@
                 <h3>Silver Membership Benefits</h3>
                 <ul>
                     <li>Cost: $300 / year</li>
-                    <li>All Bronze benefits included</li>
+                    <li>All Silver benefits included</li>
                     <li>Sidebar advertising spotlight</li>
                     <li>20% discount on event tickets</li>
                 </ul>
