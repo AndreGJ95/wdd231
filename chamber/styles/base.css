@@ -1,0 +1,59 @@
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-anim {
+    animation: fadeInSlideUp 0.8s ease-out forwards;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    background-color: #ffffff;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(2px);
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #666666;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    color: #000000;
+}
+
+dialog ul {
+    padding-left: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+dialog li {
+    margin-bottom: 0.5rem;
+}
