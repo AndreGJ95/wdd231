@@ -1,19 +1,20 @@
+/* Color Scheme Application */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #F3F4F6;
+    background-color: #F3F4F6; 
     color: #1F2937;
 }
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #1E3A8A;
+    color: #1E3A8A; 
 }
 
 header {
-    background-color: #1E3A8A;
+    background-color: #1E3A8A; 
     color: #FFFFFF;
     text-align: center;
     padding: 2rem 1rem;
@@ -36,8 +37,9 @@ main {
     padding: 1.5rem 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    border-left: 6px solid #059669;
+    border-left: 6px solid #059669; 
 }
+
 
 .color-palette {
     display: flex;
@@ -48,11 +50,11 @@ main {
 
 .color-box {
     flex: 1;
-    min-width: 200px;
+    min-width: 220px;
     padding: 1.5rem;
     border-radius: 6px;
     color: #FFFFFF;
-    font-weight: bold;
+    font-size: 0.9rem;
     text-align: center;
 }
 
@@ -65,10 +67,11 @@ main {
 }
 
 .color-accent {
-    background-color: #F3F4F6;
+    background-color: #E5E7EB;
     color: #1F2937;
     border: 1px solid #D1D5DB;
 }
+
 
 .font-heading {
     font-family: 'Montserrat', sans-serif;
@@ -79,48 +82,25 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
-.wireframe-container {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0;
-}
 
-.wireframe {
-    border: 2px dashed #1E3A8A;
-    background-color: #FAFAFA;
-    padding: 1rem;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-
-.mobile-wf {
-    width: 280px;
+.wireframe-gallery {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 1.5rem;
 }
 
-.desktop-wf {
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.wf-header, .wf-hero, .wf-content, .wf-footer, .wf-box {
-    border: 1px solid #059669;
-    background-color: #E0E7FF;
-    padding: 0.75rem;
+.wireframe-item {
     text-align: center;
-    font-size: 0.85rem;
-    font-weight: bold;
 }
 
-.wf-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+.wireframe-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #CBD5E1;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 footer {
