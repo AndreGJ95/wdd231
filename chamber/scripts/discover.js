@@ -55,4 +55,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
+
+  
+  const menuToggle = document.getElementById("menu-toggle");
+  const primaryNav = document.getElementById("primary-nav");
+
+  if (menuToggle && primaryNav) {
+    menuToggle.addEventListener("click", () => {
+      primaryNav.classList.toggle("open");
+    });
+  }
 });
