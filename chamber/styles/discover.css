@@ -1,0 +1,113 @@
+
+.message-banner {
+  background-color: var(--secondary-color, #f4d35e);
+  color: #111111;
+  text-align: center;
+  padding: 0.85rem;
+  font-weight: 600;
+  margin: 1rem auto;
+  max-width: 1200px;
+  border-radius: 6px;
+}
+
+
+.discover-grid {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.card {
+  background: var(--card-bg, #ffffff);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.card h2 { grid-area: title; margin: 0; font-size: 1.25rem; color: var(--primary-color, #0d3b66); }
+.card figure { grid-area: photo; margin: 0; overflow: hidden; border-radius: 4px; }
+.card figure img { width: 100%; height: auto; display: block; object-fit: cover; }
+.card address { grid-area: address; font-style: normal; font-weight: 600; color: #4a5568; }
+.card p { grid-area: desc; margin: 0; line-height: 1.4; }
+.card button { 
+  grid-area: button; 
+  background: var(--primary-color, #0d3b66); 
+  color: white; 
+  border: none; 
+  padding: 0.6rem 1.2rem; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  justify-self: start; 
+}
+
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .card {
+    grid-template-areas:
+      "title"
+      "photo"
+      "address"
+      "desc"
+      "button";
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "photo address"
+      "photo desc"
+      "photo button";
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "photo"
+      "address"
+      "desc"
+      "button";
+  }
+
+  
+  .card:nth-child(4n) {
+    grid-column: span 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "photo address"
+      "photo desc"
+      "photo button";
+  }
+
+  
+  .card figure img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .card figure img:hover {
+    transform: scale(1.04);
+    filter: brightness(1.08);
+  }
+}
